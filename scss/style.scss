@@ -1,0 +1,65 @@
+// Null Style File
+@import "_nullstyle.scss";
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.username{
+    text-align: center;
+    margin-top: 50px; 
+}
+
+ul {
+    margin: 50px auto;
+    width: 700px;
+
+    .posts-list-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+        margin-bottom: 50px;
+        padding: 20px 50px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+        .post-index {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: lightgreen;
+        }
+
+        .post-title {
+            margin-bottom: 20px;
+        }
+
+        .post-text {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+
+        .post-link {
+            text-align: center;
+            color: cornflowerblue;
+            cursor: pointer;
+        }
+    }
+}
